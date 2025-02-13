@@ -20,13 +20,13 @@ echo"<br>";
 
     <body>
 
-        <form method="post" action="checkout.php">
+        <form method="post" action="login.php">
             <p>
-                Proceed to Checkout
+                Proceed to Login
             </p>
             
             <p>
-                <input type="submit" name="next" value="Checkout">
+                <input type="submit" name="next" value="Login Account">
             </p>
         </form>
     </body>

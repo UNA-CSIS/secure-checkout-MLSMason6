@@ -2,9 +2,10 @@
 session_start();
 $_SESSION['it'] = $_POST['item'];
 $prices = ["Corn" => 4.99, "Fig" => 10.99, "Grapefruit" => 1.99];
-$item = $_SESSION['it'];
+include 'test_input.php';
+$item = test_input($_SESSION['it']);
 $price = $prices[$item];
-$quantity = $_POST['quantity'];
+$quantity = test_input($_POST['quantity']);
 $total = $price * $quantity;
 $_SESSION['total'] = $total;
 echo "Your total is $$total";
