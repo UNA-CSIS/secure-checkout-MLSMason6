@@ -1,7 +1,7 @@
 <?php
 session_start();
 $total = $_SESSION['total'];
-$tax_rate = 0.045;
+$tax_rate = 0.095;
 $tax_amount = $total * $tax_rate;
 $tax_total = $total + ($total * $tax_rate);
 echo "Total before tax is $$total";
